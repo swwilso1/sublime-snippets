@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+#if defined(__cplusplus)
+extern "C" {
+#endif
+
+${0}
+
+#if defined(__cplusplus)
+}
+#endif
+]]></content>
+	<tabTrigger>cpp</tabTrigger>
+	<scope>source.c,source.c++,source.objc,source.objc++,source.java</scope>
+	<description>External C function binding guard</description>
+</snippet>

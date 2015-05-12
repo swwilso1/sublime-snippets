@@ -1,11 +1,11 @@
 <snippet>
 	<content><![CDATA[
-#list(APPEND ${1:LIBRARYNAME}_HEADER_FILES
-#	"CMAKE_CURRENT_SOURCE_DIR/${2:Subdirectory}/"
-#)
+list(APPEND ${1:LIBRARYNAME}_HEADER_FILES
+	"\${CMAKE_CURRENT_SOURCE_DIR}/${2:Subdirectory}/${3:Header File}"
+)
 
 list(APPEND ${1}_SOURCE_FILES
-	"${2}/$0"
+	"${2}/$3"
 )
 
 ]]></content>

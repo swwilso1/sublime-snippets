@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+#ifndef ${1:HEADERNAME}
+#define ${1:HEADERNAME}
+
+${0}
+
+#endif /* ${1:HEADERNAME} */
+
+]]></content>
+	<tabTrigger>once</tabTrigger>
+	<scope>source.c,source.c++</scope>
+	<description>C/C++ header include guard.</description>
+</snippet>

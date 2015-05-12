@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+/* begin copyright *******************************************************
+
+                    Savant source file
+
+            Copyright 2015 through 2015 by Savant.
+
+This material contains trade secrets and may be registered with the
+U.S. Copyright Office as an unpublished work, pursuant to Title 17,
+U.S. Code, Section 408.  Unauthorized copying, adaptation, distribution
+or display is prohibited.
+
+********************************************************* end copyright */
+
+
+]]></content>
+	<tabTrigger>copy</tabTrigger>
+	<scope>source.c,source.c++,source.objc,source.objc++,source.java</scope>
+	<description>Savant Copyright Header for C/C++/Objective-C/Objective-C++ files.</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+#if defined(NEEDS_${1:HEADER})
+#	if defined(HAS_${1:HEADER})
+#		include <${2:header}>
+#	else
+#		error "System header ${2:header} required, but not available"
+#	endif
+#	undef NEEDS_${1:HEADER}
+#endif
+
+]]></content>
+	<tabTrigger>needs</tabTrigger>
+	<scope>source.c,source.c++,source.objc,source.objc++</scope>
+	<description>C preprocessor macro code for including a system header</description>
+</snippet>

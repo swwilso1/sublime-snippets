@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+namespace ${1:NAMESPACE_NAME}
+{
+
+${0}
+
+} // ${1:NAMESPACE_NAME}
+
+]]></content>
+	<tabTrigger>names</tabTrigger>
+	<scope>source.c++,source.objc++</scope>
+	<description>C++ namespace declaration</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+################################################################################
+#####
+##### ${1:company} ${2:project} CMake Configuration File
+##### Created by: Steve Wilson
+#####
+################################################################################
+
+
+]]></content>
+	<tabTrigger>cmheader</tabTrigger>
+	<scope>source.cmake</scope>
+	<description>Automatic header for CMake files</description>
+</snippet>

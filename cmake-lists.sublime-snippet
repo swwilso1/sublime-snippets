@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+#list(APPEND ${1:LIBRARYNAME}_HEADER_FILES
+#	"CMAKE_CURRENT_SOURCE_DIR/${2:Subdirectory}/"
+#)
+
+list(APPEND ${1}_SOURCE_FILES
+	"${2}/$0"
+)
+
+]]></content>
+	<tabTrigger>lists</tabTrigger>
+	<scope>source.cmake</scope>
+	<description>Build system source list variables</description>
+</snippet>

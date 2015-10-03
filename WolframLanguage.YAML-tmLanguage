@@ -1,0 +1,40 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Wolfram Language
+scopeName: source.wolframlanguage
+fileTypes: [wl,m,nb]
+uuid: 0d24868d-3925-418c-96e0-e90dc9e93a2a
+
+patterns:
+- comment: Wolfram Language Comments
+  name: comment.block.documentation
+  begin: \(\*
+  end: \*\)
+
+- comment: Wolfram Language String
+  name: string.quoted.double
+  begin: \"
+  end: \"
+
+- comment: Wolfram Language Pattern
+  name: storage.type
+  match: _+[A-Za-z][A-Za-z0-9]*
+
+- comment: Wolfram Language Operator
+  name: keyword.operator
+  match: '=+|:=|\+|\->*|\*|/|/\.|^=*|&&|\|\||!|<>|[@]+|//|/@|~~|<<|\?|;;'
+
+- comment: Wolfram Language numeric constants
+  name: constant.numeric
+  match: '[0-9]+\.*[0-9]*'
+
+- comment: Wolfram Language Function
+  name: meta.function
+  begin: ([A-Za-z][A-Za-z0-9]*)\[
+  beginCaptures:
+    '1' : {name: entity.function.name}
+  end: \]
+  patterns:
+  - include: $self
+
+...

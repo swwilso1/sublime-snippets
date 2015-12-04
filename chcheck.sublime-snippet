@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+CHECK_INCLUDE_FILE(${1:file.h} HAS_${2:FILE_H})
+]]></content>
+	<tabTrigger>chcheck</tabTrigger>
+	<scope>source.cmake</scope>
+	<description>Check host build system for C header file</description>
+</snippet>

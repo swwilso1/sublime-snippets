@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+CHECK_INCLUDE_FILE_CXX(${1:file} HAS_${2:FILE})
+]]></content>
+	<tabTrigger>cxcheck</tabTrigger>
+	<scope>source.cmake</scope>
+	<description>Check host build system for C++ header file</description>
+</snippet>
